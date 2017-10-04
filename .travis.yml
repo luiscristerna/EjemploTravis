@@ -1,7 +1,7 @@
 ---
 before_script:
   - "autopep8 -ir *"
-  - "flake8 --max-complexity=10 --exclude=*.txt,*.md,*.pyc,steps.py *"
+  - "flake8 --max-complexity=10 --exclude=*.txt,*.md,*.pyc,steps.py,*.feature *"
 install:
   - "sudo pip install --upgrade six"
   - "sudo pip install lettuce"
