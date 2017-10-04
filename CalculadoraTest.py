@@ -95,7 +95,7 @@ class CalculadoraTest(unittest.TestCase):
 
 	def test_elevar_potencia_dos_a_cero_igual_uno(self):
 		self.calc.potencia(2,0)
-		self.assertEquals(self.calc.obtener_resultado(), 'Todo numero elevado a la potencia cero es uno')
+		self.assertEquals(self.calc.obtener_resultado(), 'Numero elevado a la potencia cero es uno')
 
 	def test_elevar_potencia_letraA_a_dos_igual_datosincorrectos(self):
 		self.calc.potencia('A',2)
@@ -113,7 +113,7 @@ class CalculadoraTest(unittest.TestCase):
 
 	def test_obtener_raiz_cuadrada_menosuno_igual_nosepuede(self):
 		self.calc.raiz(-1)
-		self.assertEquals(self.calc.obtener_resultado(), 'No se puede realizar raiz cuadrada con numeros negativos')
+		self.assertEquals(self.calc.obtener_resultado(), 'Error')
 
 
 if __name__ == '__main__':
