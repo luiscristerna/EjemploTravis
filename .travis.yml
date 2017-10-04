@@ -1,12 +1,13 @@
 ---
-before_script:
-  - "autopep8 -ir *"
-  - "flake8 --max-complexity=10 --exclude=*.txt,*.md,*.pyc,steps.py *"
-install: "sudo pip install -r requerimientos.txt"
-install: "sudo pip install --upgrade six"
 lenguage: python
 python:
   - "2.7"
+install: "sudo pip install -r requerimientos.txt"
+install: "sudo pip install --upgrade six"
+install: "sudo pip install autopep8"
+before_script:
+  - "autopep8 -ir *"
+  - "flake8 --max-complexity=10 --exclude=*.txt,*.md,*.pyc,steps.py *"
 script:
   - "python CalculadoraTest.py"
   - "lettuce"
