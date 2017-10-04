@@ -4,6 +4,8 @@ before_script:
   - "flake8 --max-complexity=10 --exclude=*.txt,*.md,*.pyc,steps.py *"
 install:
   - "sudo pip install --upgrade six"
+  - "sudo pip install lettuce"
+  - "sudo pip install -u setuptools"
   - "sudo pip install autopep8"
   - "sudo pip install flake8"
 lenguage: python
