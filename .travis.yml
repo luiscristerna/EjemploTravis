@@ -3,6 +3,7 @@ before_script:
   - "autopep8 -ir *"
   - "flake8 --max-complexity=10 --exclude=*.txt,*.md,*.pyc,steps.py *"
 install: "sudo pip install -r requerimientos.txt"
+install: "sudo pip install --upgrade six"
 lenguage: python
 python:
   - "2.7"
