@@ -25,10 +25,7 @@ class Calculadora():
             self.resultado = "Datos Incorrectos"
 
     def multiplicacion(self, num1, num2):
-        try:
-            self.resultado = num1 * num2
-        except:
-            self.resultado = "Datos Incorrectos"
+        self.resultado = num1 * num2
 
     def division(self, num1, num2):
         try:
@@ -49,10 +46,8 @@ class Calculadora():
             self.resultado = 'Datos Incorrectos'
 
     def raiz(self, num1):
-        try:
-            if(num1 < 0):
-                self.resultado = 'Error'
-            else:
-                self.resultado = math.sqrt(num1)
-        except:
-            self.resultado = 'Datos incorrectos'
+        if(num1 < 0):
+            self.resultado = 'Error'
+        else:
+            self.resultado = math.sqrt(num1)
+

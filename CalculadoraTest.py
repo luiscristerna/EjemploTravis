@@ -116,5 +116,5 @@ class CalculadoraTest(unittest.TestCase):
 		self.assertEquals(self.calc.obtener_resultado(), 'Error')
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
 	unittest.main()
