@@ -17,7 +17,7 @@ script:
   - lettuce
   - coverage run --branch CalculadoraTest.py
   - coverage report
-  - cd /Features
+  - cd Features/
   - coverage run --branch EdadTest.py
   - coverage report
   - coverage run --branch FigurasTest.py
