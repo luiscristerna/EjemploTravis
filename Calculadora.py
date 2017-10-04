@@ -42,7 +42,7 @@ class Calculadora():
     def potencia(self, num1, num2):
         try:
             if(num2 == 0):
-                self.resultado = 'Todo numero elevado a la potencia cero es uno'
+                self.resultado = 'Numero elevado a la potencia cero es uno'
             else:
                 self.resultado = num1 ** num2
         except:
@@ -51,7 +51,7 @@ class Calculadora():
     def raiz(self, num1):
         try:
             if(num1 < 0):
-                self.resultado = 'No se puede realizar raiz cuadrada con numeros negativos'
+                self.resultado = 'Error'
             else:
                 self.resultado = math.sqrt(num1)
         except:
